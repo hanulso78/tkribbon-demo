@@ -5,6 +5,16 @@ in C. This repository holds the demo programs only; they need nothing installed.
 
 ![tkribbon demo](screenshots/demo-start.png)
 
+## About this release
+
+tkribbon is planned as a commercial product. Before deciding on licensing and pricing, I am releasing these demo
+programs to see whether the library is useful to Tcl/Tk developers and what they would need from it. That is why the
+programs are time-limited and the source is not public yet.
+
+Your feedback helps decide what comes next: which widgets you would use, what is missing, which platforms or Tcl/Tk
+versions matter to you, and what kind of license would work for you (per developer, per project, source included,
+and so on). Please share it in the [Issues](https://github.com/hanulso78/tkribbon-demo/issues).
+
 ## Download
 
 Get the executables from the [Releases](https://github.com/hanulso78/tkribbon-demo/releases) page:
