@@ -4,7 +4,7 @@ Try **tkribbon**, an Office-style ribbon, docking panes and 60+ custom-drawn wid
 runs on **Windows** and **Linux** (X11), in **Tcl/Tk 8.5, 8.6 and 9.0**, and in Python's tkinter. This repository holds the demo
 programs only; they need nothing installed, not even Tcl/Tk.
 
-![tkribbon demo on Windows](screenshots/windows/demo-start.png)
+<img src="screenshots/windows/demo-start.png" alt="tkribbon demo on Windows" width="800">
 
 ## About this release
 
@@ -120,57 +120,57 @@ The same demo on Windows 10 and on Linux (AlmaLinux 8, Tcl/Tk 9).
 
 **Code editor** (tkscintilla) with the ruler, minimap and margin tips
 
-![Code editor on Windows](screenshots/windows/demo-editor.png)
+<img src="screenshots/windows/demo-editor.png" alt="Code editor on Windows" width="640">
 
 **Dashboard example**: navigation view, tile dashboard, seven-segment clock, LEDs, ratings
 
-![Dashboard on Windows](screenshots/windows/demo-dashboard.png)
+<img src="screenshots/windows/demo-dashboard.png" alt="Dashboard on Windows" width="640">
 
 **Graphs** (tkgraph): smooth lines with area fill, steps, zoom and crosshairs
 
-![Graphs on Windows](screenshots/windows/demo-graph.png)
+<img src="screenshots/windows/demo-graph.png" alt="Graphs on Windows" width="640">
 
 **Data grid** with 20,000 rows, grouping and filters
 
-![Data grid on Windows](screenshots/windows/demo-data.png)
+<img src="screenshots/windows/demo-data.png" alt="Data grid on Windows" width="640">
 
 **Widgets** in the light theme
 
-![Widgets in the light theme on Windows](screenshots/windows/demo-widgets-light.png)
+<img src="screenshots/windows/demo-widgets-light.png" alt="Widgets in the light theme on Windows" width="640">
 
 **Examples launcher** (`tkribbon-examples.exe`)
 
-![Examples launcher on Windows](screenshots/windows/examples.png)
+<img src="screenshots/windows/examples.png" alt="Examples launcher on Windows" width="400">
 
 ### Linux
 
 **Start page**
 
-![Start page on Linux](screenshots/linux/demo-start.png)
+<img src="screenshots/linux/demo-start.png" alt="Start page on Linux" width="640">
 
 **Code editor** (tkscintilla)
 
-![Code editor on Linux](screenshots/linux/demo-editor.png)
+<img src="screenshots/linux/demo-editor.png" alt="Code editor on Linux" width="640">
 
 **Dashboard example**
 
-![Dashboard on Linux](screenshots/linux/demo-dashboard.png)
+<img src="screenshots/linux/demo-dashboard.png" alt="Dashboard on Linux" width="640">
 
 **Graphs** (tkgraph)
 
-![Graphs on Linux](screenshots/linux/demo-graph.png)
+<img src="screenshots/linux/demo-graph.png" alt="Graphs on Linux" width="640">
 
 **Data grid**
 
-![Data grid on Linux](screenshots/linux/demo-data.png)
+<img src="screenshots/linux/demo-data.png" alt="Data grid on Linux" width="640">
 
 **Widgets** in the light theme
 
-![Widgets in the light theme on Linux](screenshots/linux/demo-widgets-light.png)
+<img src="screenshots/linux/demo-widgets-light.png" alt="Widgets in the light theme on Linux" width="640">
 
 **Examples launcher** (`tkribbon-examples`)
 
-![Examples launcher on Linux](screenshots/linux/examples.png)
+<img src="screenshots/linux/examples.png" alt="Examples launcher on Linux" width="400">
 
 ## Feedback
 
