@@ -1,7 +1,7 @@
 # tkribbon demo
 
 Try **tkribbon**, an Office-style ribbon, docking panes and 60+ custom-drawn widgets for Tcl/Tk, written in C. It
-runs on **Windows** and **Linux** (X11), in Tcl/Tk 8.6 and 9 and in Python's tkinter. This repository holds the demo
+runs on **Windows** and **Linux** (X11), in **Tcl/Tk 8.5, 8.6 and 9.0**, and in Python's tkinter. This repository holds the demo
 programs only; they need nothing installed, not even Tcl/Tk.
 
 ![tkribbon demo on Windows](screenshots/windows/demo-start.png)
@@ -28,8 +28,9 @@ same two programs:
 
 | Platform | File | Notes |
 |---|---|---|
-| Windows | `tkribbon-demo.exe`, `tkribbon-examples.exe` | Windows 10 or 11, 64-bit |
-| Linux | `tkribbon-demo-linux-x86_64.tar.gz` | Both programs in one archive; x86-64 with glibc 2.28 or newer |
+| Windows | `tkribbon-demo.exe`, `tkribbon-examples.exe` | Windows 10 or 11, 64-bit; runs on Tcl/Tk 8.5 |
+| Windows | `tkribbon-demo-tcl9.exe`, `tkribbon-examples-tcl9.exe` | The same programs on Tcl/Tk 9.0 |
+| Linux | `tkribbon-demo-linux-x86_64.tar.gz` | Both programs in one archive; x86-64 with glibc 2.28 or newer; runs on Tcl/Tk 9.0 |
 | Python | `tkribbon-0.1.0-py3-none-win_amd64.whl`, `tkribbon-0.1.0-py3-none-manylinux_2_28_x86_64.whl` | The library for tkinter, Python 3.8 or newer: `pip install <file>` |
 
 All the files are time-limited: they work for **15 days** from the first start on a computer.
@@ -65,7 +66,24 @@ cd tkribbon-demo-linux-x86_64
 | `tkgraph` | Graphs and charts: lines, bars, pie, heatmap, polar, 3D surfaces, figures with several plots, export |
 | `tkhtmlview` | HTML/CSS viewer: flex, grid, CSS variables, gradients, history, find, zoom, forms |
 
-All commands live in the `rtk::` namespace and load through stubs in Tcl/Tk 8.5, 8.6 and 9:
+### Tcl/Tk versions
+
+tkribbon supports both Tcl/Tk 8.x and 9.x. Each library comes in two builds, and `package require` loads the one
+that matches the running Tcl:
+
+| | Tcl/Tk 8.5 and 8.6 | Tcl/Tk 9.0 |
+|---|---|---|
+| Windows | `tkribbon.dll`, `tkscintilla.dll`, `tkgraph.dll`, `tkhtmlview.dll` | `tcl9tkribbon.dll`, `tcl9tkscintilla.dll`, `tcl9tkgraph.dll`, `tcl9tkhtmlview.dll` |
+| Linux | `tkribbon.so`, `tkscintilla.so`, `tkgraph.so`, `tkhtmlview.so` | `tcl9tkribbon.so`, `tcl9tkscintilla.so`, `tcl9tkgraph.so`, `tcl9tkhtmlview.so` |
+| Demo programs | `tkribbon-demo.exe`, `tkribbon-examples.exe` (Windows, Tcl/Tk 8.5) | `tkribbon-demo-tcl9.exe`, `tkribbon-examples-tcl9.exe` (Windows), `tkribbon-demo`, `tkribbon-examples` (Linux) |
+| Python wheels | Used when tkinter runs on Tk 8.6 | Used when tkinter runs on Tk 9 |
+
+The libraries use the stubs interfaces, so the 8.x build loads in any Tcl/Tk from 8.5 on and the 9.x build in any
+Tcl/Tk 9.0. The examples are tested on Tcl/Tk 8.6 and 9.0, and the same scripts run on both.
+
+### Commands
+
+All commands live in the `rtk::` namespace:
 
 ```tcl
 package require tkribbon
